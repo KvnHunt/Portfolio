@@ -1,5 +1,5 @@
 {
-    "homepage": "/",
+    "homepage": "https://github.com/KvnHunt/Portfolio",
     "name": "react-portfolio",
     "version": "0.1.0",
     "private": true,
@@ -17,7 +17,7 @@
     },
     "scripts": {
       "start": "react-scripts start",
-      "build": "react-scripts build && echo '/* /index.html  200' | cat >build/_redirects ",
+      "build": "react-scripts build",
       "serve": "serve build",
       "test": "react-scripts test",
       "eject": "react-scripts eject",

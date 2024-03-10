@@ -6,7 +6,7 @@ import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 
 function Header() {
-    const [currentPage, handlePageChange] = useState("About");
+    const [currentPage, setCurrentPage] = useState("About");
 
     const renderPage = () => {
         switch (currentPage) {
@@ -22,6 +22,10 @@ function Header() {
             default:
                 return <About />;
         }
+    };
+
+    const handlePageChange = (page) => {
+        setCurrentPage(page);
     };
 
     return (
@@ -45,7 +49,7 @@ function Header() {
             />
             {/* Call the renderPage function passing in the currentPage */}
             <main>
-                <div>{renderPage(currentPage)}</div>
+                <div>{renderPage()}</div>
             </main>
         </div>
     );
